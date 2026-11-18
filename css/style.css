@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=EB+Garamond:ital,wght@0,400;0,500;1,500&display=swap");
+
+:root {
+    --night: #2B0F0F;
+    --wine:  #7A1F1F;
+    --ember: #C54B2C;
+    --amber: #F2A541;
+    --slate: #2D2D3A;
+    --cream: #F4EBD0;
+    --paper: #FBF6E6;
+    --gold:  #C9A227;
+    --green: #2F4F3A;
+    --ink:   #1E1A16;
+}
+
+* {
+    box-sizing:border-box
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--cream);
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 19px;
+    line-height: 1.6
+}
+
+.index:hover {
+    color: var(--wine);
+}
