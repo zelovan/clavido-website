@@ -26,6 +26,61 @@ body {
     line-height: 1.6
 }
 
-.index:hover {
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+h1 {
+    font-family: "Cincel Decorative", Georgia, serif;
+    color: var(--wine)
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 24px;
+    padding: 12px 24px;
+    background: var(--night);
+    border-bottom: 3px solid var(--amber)
+}
+
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Cincel Decorative", Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.site-nav a{
+    padding: 10px 12px;
+    border-radius: 4px;
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.site-nav a:hover {
     color: var(--wine);
 }
