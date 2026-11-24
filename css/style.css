@@ -11,6 +11,7 @@
     --gold:  #C9A227;
     --green: #2F4F3A;
     --ink:   #1E1A16;
+    --display: "Cinzel Decorative", Georgia, serif;
 }
 
 * {
@@ -32,9 +33,38 @@ main {
     padding: 48px 24px;
 }
 
+h1, h2 {
+    font-family: var(--display);
+    color: var(--wine);
+    line-height: 1.2;
+}
+
 h1 {
-    font-family: "Cincel Decorative", Georgia, serif;
-    color: var(--wine)
+    font-size: clamp(30.4px, 5vw, 48px);
+    margin: 0 0 16px;
+}
+
+h2 {
+    font-size: 25.6px;
+    margin: 0 0 8px;
+}
+
+h3 {
+    font-size: 21.6px;
+    font-weight: 600;
+    color: var(--wine);
+    margin: 0 0 4px;
+}
+
+.lead {
+    max-width: 46ch;
+    font-size: 20.8px;
+    margin: 0 0 28px;
+}
+
+.sub {
+    margin: 0 0 20px;
+    font-style: italic;
 }
 
 .site-header {
@@ -79,8 +109,169 @@ h1 {
     border-radius: 4px;
     color: var(--cream);
     text-decoration: none;
+    border-bottom: 2px solid transparent;
 }
 
 .site-nav a:hover {
     color: var(--wine);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    background: var(--wine);
+    color: var(--cream);
+    font: 600 16.8px "EB Garamond", Georgia, serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s, box-shadow .2s;
+}
+
+.btn:hover {
+    background: var(--ember);
+    color: var(--cream);
+    box-shadow: 0 0 18px rgba(201, 162, 39, .6);
+}
+
+.btn.alt {
+    background: transparent;
+    color: var(--wine);
+}
+
+.btn.alt:hover {
+    background: var(--paper);
+    color: var(--wine);
+}
+
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.section {
+    margin-top: 56px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: var(--paper);
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: box-shadow .25s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(201, 162, 39, .55);
+}
+
+.card p {
+    margin: 0;
+}
+
+.card .price {
+    margin-top: auto;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 19.2px;
+    color: var(--wine);
+}
+
+.tag {
+    align-self: flex-start;
+    padding: 0 10px;
+    border-radius: 3px;
+    background: var(--green);
+    color: var(--cream);
+    font-size: 13.6px;
+    font-weight: 600;
+}
+
+.tag.rare {
+    background: var(--wine);
+    border: 1px solid var(--gold);
+}
+
+.panel {
+    background: var(--paper);
+    border: 3px double var(--gold);
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.panel p {
+    margin: 0 0 12px;
+}
+
+.panel:target {
+    box-shadow: 0 0 24px rgba(201, 162, 39, .7);
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.post {
+    max-width: 70ch;
+    padding: 20px 0;
+    border-top: 1px solid var(--gold);
+}
+
+.post small {
+    font-style: italic;
+    color: var(--wine);
+    font-size: 16.8px;
+}
+
+.post p {
+    margin: 4px 0 0;
+}
+
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.values div {
+    border-top: 3px double var(--gold);
+    padding-top: 12px;
+}
+
+.values p {
+    margin: 0;
+}
+
+.story-text {
+    max-width: 60ch;
+    font-size: 20px;
+}
+
+.site-footer {
+    padding: 28px 24px;
+    background: var(--night);
+    border-top: 3px solid var(--amber);
+    color: var(--cream);
+    text-align: center;
+    font-size: 15.2px;
+}
+
+.site-footer p {
+    margin: 0;
 }
