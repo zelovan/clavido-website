@@ -27,6 +27,16 @@ body {
     line-height: 1.6
 }
 
+a {
+    
+    color: var(--wine);
+}
+
+a:hover {
+    color: var(--ember);
+}
+
+
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -56,19 +66,17 @@ h3 {
     margin: 0 0 4px;
 }
 
+.lead {
+    max-width: 46ch;
+    font-size: 20.8px;
+    margin: 0 0 28px;
+}
+
 .sub {
     margin: 0 0 20px;
     font-style: italic;
 }
 
-a {
-    
-    color: var(--wine);
-}
-
-a:hover {
-    color: var(--ember);
-}
 
 .site-header {
     display: flex;
@@ -92,6 +100,10 @@ a:hover {
     font-weight: 700;
     color: var(--cream);
     text-decoration: none;
+}
+
+.brand:hover {
+    color: var(--amber);
 }
 
 .logo {
@@ -189,6 +201,43 @@ a:hover {
     font-weight: 600;
     font-size: 19.2px;
     color: var(--wine);
+}
+
+.tag {
+    align-self: flex-start;
+    padding: 0 10px;
+    border-radius: 3px;
+    background: var(--green);
+    color: var(--cream);
+    font-size: 13.6px;
+    font-weight: 600;
+}
+
+.tag.rare {
+    background: var(--wine);
+    border: 1px solid var(--gold);
+}
+
+.panel {
+    background: var(--paper);
+    border: 3px double var(--gold);
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.panel p {
+    margin: 0 0 12px;
+}
+
+.panel:target {
+    box-shadow: 0 0 24px rgba(201, 162, 39, .7);
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
 }
 
 .post {
