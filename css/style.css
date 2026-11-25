@@ -61,6 +61,15 @@ h3 {
     font-style: italic;
 }
 
+a {
+    
+    color: var(--wine);
+}
+
+a:hover {
+    color: var(--ember);
+}
+
 .site-header {
     display: flex;
     flex-wrap: wrap;
@@ -198,7 +207,6 @@ h3 {
     margin: 4px 0 0;
 }
 
-
 .values {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -219,6 +227,13 @@ h3 {
     max-width: 60ch;
     font-size: 20px;
 }
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Prevents overflow on small screens */
+    height: auto;
+  }
 
 .site-footer {
     padding: 28px 24px;
